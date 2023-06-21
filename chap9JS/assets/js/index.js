@@ -1,7 +1,8 @@
     function produit(){
     let x=prompt("veuillez entrer un nombre")
     let y=prompt("veuillez entrer un multiplicateur")
-            alert(x*y)         
+    let output
+    console.log("le produit de " + x + y " est egal à " + x*y , function(val){output = val});        
     }
 
     function afficheImg(){
