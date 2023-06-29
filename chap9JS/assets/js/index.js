@@ -1,15 +1,12 @@
-    function produit(){
-    let x=prompt("veuillez entrer un nombre")
-    let y=prompt("veuillez entrer un multiplicateur")
-        //stocker le console.log dans une variable pour ensuite l'inserer sous l'image.....
-    let output
-    console.log("le produit de " + x + y " est egal à " + x*y , function(val){output = val});        
+    let result = x*y;
+    document.getElementById("result1").innerHTML = "le produit de ces nombre est egal à: " + result;
     }
-
+    
+    
     function afficheImg(){
-    let butterfly = document.getElementById('butterfly');
-    butterfly.innerHTML = `<img src="assets/images/papillon.jpg">`
-    }
-            
+        let butterfly = document.getElementById('butterfly');
+        butterfly.innerHTML = `<img src="assets/images/papillon.jpg">`
+        }
+
     produit();
-    afficheImg();       
+    afficheImg();
